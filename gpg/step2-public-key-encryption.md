@@ -1,4 +1,4 @@
-##_Generating a new keypair
+## Generating a new keypair
 
 The command-line option `--gen-key` is used to create a new primary keypair:
 
@@ -22,7 +22,7 @@ Finally PGP needs a passphrase to protect the primary and subordinate private ke
 * Ideally, the passphrase should not use words from a dictionary and should mix the case of alphabetic characters as well as use non-alphabetic characters.
 
 
-## Exchanging keys
+## Exchanging keys
 
 To communicate with others you must exchange public keys.
 
@@ -30,7 +30,7 @@ To list the keys on your public keyring use the command-line option `--list-keys
 
 `gpg --list-keys`{{execute}}
 
-##_Exporting a public key
+## Exporting a public key
 
 * To send your public key to a correspondent you must first export it.
 * The flag `--export` is used to do this.
