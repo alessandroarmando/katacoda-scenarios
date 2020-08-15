@@ -1,6 +1,7 @@
 ##_Generating a new keypair
 
-The command-line option `--gen-key` is used to create a new primary keypair.
+The command-line option `--gen-key` is used to create a new primary keypair:
+
 `gpg --gen-key`{{execute}}
 
 GnuPG is able to create several different types of keypairs, but a primary key must be capable of making signatures:
@@ -25,7 +26,8 @@ Finally PGP needs a passphrase to protect the primary and subordinate private ke
 
 To communicate with others you must exchange public keys.
 
-To list the keys on your public keyring use the command-line option `--list-keys`.
+To list the keys on your public keyring use the command-line option `--list-keys`:
+
 `gpg --list-keys`{{execute}}
 
 ##_Exporting a public key
@@ -34,5 +36,5 @@ To list the keys on your public keyring use the command-line option `--list-keys
 * The flag `--export` is used to do this.
 * It takes an additional argument identifying the public key to export.
 * Either the key ID or any part of the user ID may be used to identify the key to export.
-```
-`gpg --armor --export mario.rossi@gmail.com`
+
+`gpg --armor --export mario.rossi@gmail.com`{{execute}}
